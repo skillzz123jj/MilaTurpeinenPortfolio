@@ -11,16 +11,30 @@
     <h1>Mila Turpeinen Portfolio</h1>
     <p>My very own portfolio</p>
 
-    <h2>Links</h2>
+   
 
       
-<canvas width=800 height=500 id="gamecanvas">
+<canvas width=800 height=500 id="canvas">
 
 </canvas>
 
-    
-    <p><a href="https://github.com/skillzz123jj" target="_blank">GitHub</a>.</p>
+<h2>Links</h2>
+    <p><a href="https://github.com/skillzz123jj" target="_blank">GitHub</a></p>
 
+    <div class = "infodiv">
+        hi
+        </div>
+
+        <script>
+            // Get the canvas element and its 2D rendering context
+            var canvas = document.getElementById("canvas");
+            var ctx = canvas.getContext("2d");
     
+            // Draw text on the canvas
+            ctx.font = "30px Arial"; // Set the font size and style
+            ctx.fillStyle = "red"; // Set the text color
+            ctx.textAlign = "center"; // Set the text alignment
+            ctx.fillText("Text inside the canvas", canvas.width / 2, canvas.height / 2); // Draw the text at the center
+        </script>
 </body>
 </html>

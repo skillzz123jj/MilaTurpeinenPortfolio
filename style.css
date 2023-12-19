@@ -4,7 +4,7 @@ body{
     margin: 0; /* Remove default body margin */
 }
 
-#gamecanvas {
+#canvas {
  
     box-sizing: border-box; /* Include border in the width and height calculations */
     width: 100%; /* Use a percentage for width to make it responsive */
@@ -17,4 +17,18 @@ body{
     display: block; /* Ensure it's treated as a block-level element */
     margin: 0 auto; /* Center the canvas horizontally */
     
+}
+
+
+.infodiv{
+
+    width: 100%;
+    height: 70px;
+    background-color: chartreuse;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+
 }
