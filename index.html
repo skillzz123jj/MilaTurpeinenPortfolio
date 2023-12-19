@@ -11,30 +11,42 @@
     <h1>Mila Turpeinen Portfolio</h1>
     <p>My very own portfolio</p>
 
-   
+    <canvas width="800" height="500" id="canvas"></canvas>
 
-      
-<canvas width=800 height=500 id="canvas">
+  
 
-</canvas>
+    <div class="infodiv">
+        <p style="text-align:left;">Mila</p>
+    </div>
+    <p><a href="https://ruoka-aika.netlify.app/" target="_blank">Ruoka-aika</a></p>
+    <canvas width="800" height="500" id="anotherCanvas"></canvas>
 
-<h2>Links</h2>
+    <div class="Värityskirja">
+        <p><a href="https://varityskirja.netlify.app/" target="_blank">Värityskirja</a></p>
+    </div>
+    <h2>Links</h2>
     <p><a href="https://github.com/skillzz123jj" target="_blank">GitHub</a></p>
 
-    <div class = "infodiv">
-        hi
-        </div>
+    <script>
+        // Get the first canvas element and its 2D rendering context
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
 
-        <script>
-            // Get the canvas element and its 2D rendering context
-            var canvas = document.getElementById("canvas");
-            var ctx = canvas.getContext("2d");
-    
-            // Draw text on the canvas
-            ctx.font = "30px Arial"; // Set the font size and style
-            ctx.fillStyle = "red"; // Set the text color
-            ctx.textAlign = "center"; // Set the text alignment
-            ctx.fillText("Text inside the canvas", canvas.width / 2, canvas.height / 2); // Draw the text at the center
-        </script>
+        // Draw text on the first canvas
+        ctx.font = "30px Arial";
+        ctx.fillStyle = "red";
+        ctx.textAlign = "center";
+        ctx.fillText("Ruoka-aika", canvas.width / 2, canvas.height / 2);
+
+        // Get the second canvas element and its 2D rendering context
+        var anotherCanvas = document.getElementById("anotherCanvas");
+        var anotherCtx = anotherCanvas.getContext("2d");
+
+        // Draw text on the second canvas
+        anotherCtx.font = "30px Arial";
+        anotherCtx.fillStyle = "blue";
+        anotherCtx.textAlign = "center";
+        anotherCtx.fillText("Värityskirja", anotherCanvas.width / 2, anotherCanvas.height / 2);
+    </script>
 </body>
 </html>
