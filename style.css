@@ -14,7 +14,7 @@ body{
 
 
     width: 100%; /* Use a percentage for width to make it responsive */
-    max-width: 800px; /* Set a maximum width for larger screens */
+    max-width: 1000px; /* Set a maximum width for larger screens */
     height: auto; /* Let the height adjust proportionally */
     border: 5px solid black;
     background-color: beige;
