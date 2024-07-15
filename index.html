@@ -1,31 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Portfolio</title>
 </head>
+
 <body>
-    
-    <h1>Mila Turpeinen Portfolio</h1>
-    <p>My very own portfolio</p>
 
-    <canvas width="800" height="500" id="canvas"></canvas>
+    <nav>
+        <div class="nav-left">
+            <a>Mila Turpeinen</a>
+        </div>
+        <div class="nav-right">
+            <a href="#ruoka-aika">Ruoka-aika</a>
+            <a href="#varityskirja">Värityskirja</a>
+            <a href="#links">Links</a>
+            <a href="#contact-info">Contact</a>
 
-  
+        </div>
+    </nav>
 
-    <div class="infodiv">
+    <h1>
+        <img src="Images/Mila_Turpeinen_Picture.jpg" style="width:400px; height:auto; vertical-align:middle;">
+        Mila Turpeinen Portfolio
+    </h1>
+    <p style="display: inline; margin-left: 15px;">My very own portfolio</p>
+
+
+    <div id="ruoka-aika" class="section">
+        <div class="canvas-container">
+            <canvas width="800" height="500" id="canvas"></canvas>
+            <div class="video-container">
+                <video controls>
+                    <source src="C:\Users\turpe\Videos\Captures\Parking Simulator 2024-06-13 12-52-13.mp4"
+                        type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="infodiv">
         <p style="text-align:left;">Mila</p>
-    </div>
-    <p><a href="https://ruoka-aika.netlify.app/" target="_blank">Ruoka-aika</a></p>
-    <canvas width="800" height="500" id="anotherCanvas"></canvas>
+    </div> -->
 
-    <div class="Värityskirja">
-        <p><a href="https://varityskirja.netlify.app/" target="_blank">Värityskirja</a></p>
+    <div id="varityskirja" class="section">
+        <div class="canvas-container">
+            <canvas width="800" height="500" id="anotherCanvas"></canvas>
+            <div class="gif-container">
+                <img src="path/to/your/varityskirja-image.gif" alt="Värityskirja GIF">
+            </div>
+        </div>
     </div>
-    <h2>Links</h2>
-    <p><a href="https://github.com/skillzz123jj" target="_blank">GitHub</a></p>
+
+    <div id="links" class="section">
+        <h2>Links</h2>
+        <p><a href="https://github.com/skillzz123jj" target="_blank">GitHub</a></p>
+    </div>
+
+    <div id="contact-info" class="section">
+        <h3>Contact</h3>
+        <a> Email: mila.turpeinen.dev@gmail.com</a>
+    </div>
 
     <script>
         // Get the first canvas element and its 2D rendering context
@@ -49,4 +88,5 @@
         anotherCtx.fillText("Värityskirja", anotherCanvas.width / 2, anotherCanvas.height / 2);
     </script>
 </body>
+
 </html>
