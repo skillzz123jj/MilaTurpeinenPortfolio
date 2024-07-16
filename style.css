@@ -3,9 +3,7 @@ body {
     text-align: center;
     background-color: rgb(91, 165, 140);
     margin: 0;
-    /* Remove default body margin */
     font-family: Arial, sans-serif;
-    /* Add your font */
 }
 
 nav {
@@ -13,7 +11,6 @@ nav {
     overflow: hidden;
     display: flex;
     justify-content: space-between;
-    /* Space between items */
     align-items: center;
     padding: 14px 16px;
     position: fixed;
@@ -22,32 +19,18 @@ nav {
     z-index: 1000;
 }
 
-nav .nav-left {
-    display: flex;
-    align-items: center;
-    /* Align name vertically */
-}
-
-nav .nav-left a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5em;
-    /* Size for your name */
-    margin-right: 20px;
-    /* Space between name and links */
-}
-
+nav .nav-left,
 nav .nav-right {
     display: flex;
-    justify-content: flex-end;
-    /* Align links to the right */
-    flex-grow: 1;
+    align-items: center;
 }
 
+nav .nav-left a,
 nav .nav-right a {
     color: white;
     text-decoration: none;
-    padding: 0 20px;
+    font-size: 1.2em;
+    margin-right: 10px;
 }
 
 nav .nav-right a:hover {
@@ -55,96 +38,150 @@ nav .nav-right a:hover {
     color: black;
 }
 
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.responsive-img {
+    width: 100%;
+    max-width: 300px;
+    /* Reduced max-width for better fit on smaller screens */
+    height: auto;
+}
+
+.inline-text {
+    display: inline-block;
+    margin-left: 15px;
+}
+
 .section {
     padding: 20px;
     text-align: center;
     margin-top: 60px;
-    /* Adjusted to avoid overlap with fixed nav */
-}
-
-h1 {
-    display: flex;
-    /* Use flexbox for layout */
-    align-items: center;
-    /* Center items vertically */
-}
-
-h1 img {
-    margin-right: 15px;
-    /* Space between the image and title */
-}
-
-p {
-    display: inline;
-    /* Keeps the paragraph on the same line */
-    margin-left: 15px;
-    /* Adds space between title and paragraph */
-}
-
-#canvas,
-#anotherCanvas {
-    box-sizing: border-box;
-    /* Include border in the width and height calculations */
-    width: 100%;
-    /* Use a percentage for width to make it responsive */
-    max-width: 1000px;
-    /* Set a maximum width for larger screens */
-    height: auto;
-    /* Let the height adjust proportionally */
-    border: 5px solid black;
-    background-color: white;
-    background-image: url(images/background.jpg);
-    background-size: contain;
-    display: block;
-    /* Ensure it's treated as a block-level element */
-    margin: 0 auto;
-    /* Center the canvas horizontally */
-}
-
-.infodiv {
-    width: 100%;
-    height: auto;
-    background-color: chartreuse;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
-}
-
-.media-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: auto;
 }
 
 .canvas-container {
     position: relative;
-    width: 800px;
-    height: 500px;
+    width: 100%;
+    max-width: 100%;
     margin: auto;
 }
 
 canvas {
     display: block;
-}
-
-.video-container,
-.gif-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    /* Adjust the width as needed */
-    height: auto;
-}
-
-video,
-img {
     width: 100%;
     height: auto;
+    border: 5px solid black;
+    background-color: white;
+    background-image: url('images/background.jpg');
+    background-size: contain;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    /* Adjusted for better fit on smaller screens */
+    margin: auto;
+}
+
+.responsive-video {
+    width: 100%;
+    height: auto;
+}
+
+.gif-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    /* Adjusted for better fit on smaller screens */
+    margin: auto;
+}
+
+.email-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.email-container span {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.email-container a {
+    color: blue;
+    text-decoration: none;
+}
+
+.email-container a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+
+    nav .nav-left a,
+    nav .nav-right a {
+        font-size: 1em;
+        margin-right: 5px;
+    }
+
+    .section {
+        padding: 10px;
+    }
+
+    h1 {
+        flex-direction: column;
+    }
+
+    .inline-text {
+        margin-left: 0;
+    }
+
+    .responsive-img {
+        max-width: 100%;
+    }
+
+    .canvas-container,
+    .video-container,
+    .gif-container {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+
+    nav .nav-left a,
+    nav .nav-right a {
+        font-size: 0.8em;
+        /* Further reduction for very small screens */
+    }
+
+    h1 {
+        flex-direction: column;
+    }
+
+    .responsive-img {
+        max-width: 80%;
+        /* Further reduction for very small screens */
+    }
+
+    .canvas-container,
+    .video-container,
+    .gif-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .section {
+        padding: 5px;
+        /* Reduced padding for very small screens */
+        margin-top: 50px;
+        /* Adjusted to avoid overlap with fixed nav */
+    }
 }

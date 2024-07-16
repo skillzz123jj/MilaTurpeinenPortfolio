@@ -9,7 +9,6 @@
 </head>
 
 <body>
-
     <nav>
         <div class="nav-left">
             <a>Mila Turpeinen</a>
@@ -19,22 +18,20 @@
             <a href="#varityskirja">Värityskirja</a>
             <a href="#links">Links</a>
             <a href="#contact-info">Contact</a>
-
         </div>
     </nav>
 
     <h1>
-        <img src="Images/Mila_Turpeinen_Picture.jpg" style="width:400px; height:auto; vertical-align:middle;">
+        <img src="Images/Mila_Turpeinen_Picture.jpg" class="responsive-img" alt="Mila Turpeinen Picture">
         Mila Turpeinen Portfolio
     </h1>
-    <p style="display: inline; margin-left: 15px;">My very own portfolio</p>
-
+    <p class="inline-text">My very own portfolio</p>
 
     <div id="ruoka-aika" class="section">
         <div class="canvas-container">
-            <canvas width="800" height="500" id="canvas"></canvas>
+            <canvas id="canvas"></canvas>
             <div class="video-container">
-                <video controls>
+                <video controls class="responsive-video">
                     <source src="C:\Users\turpe\Videos\Captures\Parking Simulator 2024-06-13 12-52-13.mp4"
                         type="video/mp4">
                     Your browser does not support the video tag.
@@ -43,15 +40,11 @@
         </div>
     </div>
 
-    <!-- <div class="infodiv">
-        <p style="text-align:left;">Mila</p>
-    </div> -->
-
     <div id="varityskirja" class="section">
         <div class="canvas-container">
-            <canvas width="800" height="500" id="anotherCanvas"></canvas>
+            <canvas id="anotherCanvas"></canvas>
             <div class="gif-container">
-                <img src="path/to/your/varityskirja-image.gif" alt="Värityskirja GIF">
+                <img src="path/to/your/varityskirja-image.gif" class="responsive-img" alt="Värityskirja GIF">
             </div>
         </div>
     </div>
@@ -63,7 +56,15 @@
 
     <div id="contact-info" class="section">
         <h3>Contact</h3>
-        <a> Email: mila.turpeinen.dev@gmail.com</a>
+        <div class="email-container">
+            <span>Email: </span>
+            <a href="mailto:mila.turpeinen.dev@gmail.com">mila.turpeinen.dev@gmail.com</a>
+        </div>
+        <div class="number-container">
+            <span>Number: </span>
+            <a href="tel:+358456185527">+358 45 6185527</a>
+
+        </div>
     </div>
 
     <script>
