@@ -23,19 +23,15 @@
 
     <h1>
         <img src="Images/Mila_Turpeinen_Picture.jpg" class="responsive-img" alt="Mila Turpeinen Picture">
-        Mila Turpeinen Portfolio
+        Hi i'm Mila Turpeinen, I am a programmer.
     </h1>
-    <p class="inline-text">My very own portfolio</p>
+    <!-- <p class="inline-text">My very own portfolio</p> -->
 
     <div id="ruoka-aika" class="section">
         <div class="canvas-container">
-            <canvas id="canvas"></canvas>
+            <!-- <canvas id="canvas"></canvas> -->
             <div class="video-container">
-                <video controls class="responsive-video">
-                    <source src="C:\Users\turpe\Videos\Captures\Parking Simulator 2024-06-13 12-52-13.mp4"
-                        type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <img alt="Gameplay for Ruoka-aika" width="50%" height="30%" src="Images/Ruoka-aika_GIF.gif">
             </div>
         </div>
     </div>
@@ -44,7 +40,7 @@
         <div class="canvas-container">
             <canvas id="anotherCanvas"></canvas>
             <div class="gif-container">
-                <img src="path/to/your/varityskirja-image.gif" class="responsive-img" alt="Värityskirja GIF">
+                <img src="Images/Ruoka-aika_GIF.gif" class="responsive-img" alt="Värityskirja GIF">
             </div>
         </div>
     </div>
@@ -72,11 +68,13 @@
         var canvas = document.getElementById("canvas");
         var ctx = canvas.getContext("2d");
 
+
         // Draw text on the first canvas
         ctx.font = "30px Arial";
         ctx.fillStyle = "red";
         ctx.textAlign = "center";
         ctx.fillText("Ruoka-aika", canvas.width / 2, canvas.height / 2);
+
 
         // Get the second canvas element and its 2D rendering context
         var anotherCanvas = document.getElementById("anotherCanvas");

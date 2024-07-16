@@ -67,25 +67,39 @@ h1 {
     position: relative;
     width: 100%;
     max-width: 100%;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    /* Centers the canvas horizontally */
+    align-items: center;
+    /* Centers the canvas vertically */
+    height: 100vh;
+    /* Ensure the container takes the full height of the viewport */
+}
+
+.canvas-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    /* Centers the canvas horizontally */
+    align-items: center;
+    /* Centers the canvas vertically */
+    height: auto;
+    /* Adjust height as needed */
+    padding: 20px;
+    /* Add padding for spacing */
 }
 
 canvas {
     display: block;
-    width: 100%;
+    width: 50%;
+    /* Adjust this value to make the canvas smaller */
     height: auto;
     border: 5px solid black;
     background-color: white;
     background-image: url('images/background.jpg');
     background-size: contain;
-}
-
-.video-container {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    /* Adjusted for better fit on smaller screens */
-    margin: auto;
 }
 
 .responsive-video {
