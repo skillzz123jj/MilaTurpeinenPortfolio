@@ -1,9 +1,11 @@
 body {
     padding-top: 5%;
     text-align: center;
-    background-color: rgb(91, 165, 140);
+    background-color: rgb(27, 31, 31);
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Candara', Arial, sans-serif;
+    color: wheat;
+    /*  sans-serif; */
 }
 
 nav {
@@ -48,7 +50,6 @@ h1 {
 .responsive-img {
     width: 100%;
     max-width: 300px;
-    /* Reduced max-width for better fit on smaller screens */
     height: auto;
 }
 
@@ -69,37 +70,28 @@ h1 {
     max-width: 100%;
     display: flex;
     justify-content: center;
-    /* Centers the canvas horizontally */
     align-items: center;
-    /* Centers the canvas vertically */
-    height: 100vh;
-    /* Ensure the container takes the full height of the viewport */
-}
-
-.canvas-container {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    /* Centers the canvas horizontally */
-    align-items: center;
-    /* Centers the canvas vertically */
     height: auto;
-    /* Adjust height as needed */
     padding: 20px;
-    /* Add padding for spacing */
 }
 
 canvas {
     display: block;
     width: 50%;
-    /* Adjust this value to make the canvas smaller */
     height: auto;
     border: 5px solid black;
     background-color: white;
     background-image: url('images/background.jpg');
     background-size: contain;
+}
+
+.bordered-img {
+    border: 5px solid white;
+    /* Change this to your desired border color */
+    border-radius: 10px;
+    /* Optional: adds rounded corners */
+    margin-right: 15px;
+    /* Optional: adds spacing between the image and text */
 }
 
 .responsive-video {
@@ -111,7 +103,6 @@ canvas {
     position: relative;
     width: 100%;
     max-width: 100%;
-    /* Adjusted for better fit on smaller screens */
     margin: auto;
 }
 
@@ -136,7 +127,41 @@ canvas {
     text-decoration: underline;
 }
 
-@media (max-width: 600px) {
+.video-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.text-container {
+    margin-left: 20px;
+    font-size: 16px;
+    color: rgb(220, 215, 215);
+    /* Set text color to white */
+}
+
+.text-container a {
+    color: rgb(81, 166, 81);
+    /* Change this to your desired link color */
+    text-decoration: none;
+    /* Optional: remove underline */
+}
+
+.text-container a:hover {
+    color: rgb(120, 196, 120);
+    /* Change this to your desired hover link color */
+    text-decoration: underline;
+    /* Optional: underline on hover */
+}
+
+.game-name {
+    color: rgb(81, 166, 81);
+    /* Change this to your desired color */
+}
+
+@media (max-width: 768px) {
 
     nav .nav-left a,
     nav .nav-right a {
@@ -166,6 +191,16 @@ canvas {
         width: 100%;
         max-width: 100%;
     }
+
+    .video-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-container {
+        margin-left: 0;
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -173,7 +208,6 @@ canvas {
     nav .nav-left a,
     nav .nav-right a {
         font-size: 0.8em;
-        /* Further reduction for very small screens */
     }
 
     h1 {
@@ -182,7 +216,6 @@ canvas {
 
     .responsive-img {
         max-width: 80%;
-        /* Further reduction for very small screens */
     }
 
     .canvas-container,
@@ -194,8 +227,6 @@ canvas {
 
     .section {
         padding: 5px;
-        /* Reduced padding for very small screens */
         margin-top: 50px;
-        /* Adjusted to avoid overlap with fixed nav */
     }
 }
