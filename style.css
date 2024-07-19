@@ -2,7 +2,7 @@ html,
 body {
     padding-top: 5%;
     text-align: center;
-    background-color: rgb(27, 31, 31);
+    background-color: rgb(27, 27, 27);
     margin: 0;
     font-family: 'Candara', Arial, sans-serif;
     color: white;
@@ -58,8 +58,8 @@ h1 {
 h2.section-title {
     font-size: 2em;
     margin: 20px 0;
-    color: rgb(81, 166, 81);
-    /* Change to desired color */
+    color: rgb(82, 137, 193);
+
 }
 
 .responsive-img {
@@ -89,18 +89,8 @@ h2.section-title {
     padding: 20px;
 }
 
-canvas {
-    display: block;
-    width: 50%;
-    height: auto;
-    border: 5px solid black;
-    background-color: white;
-    background-image: url('images/background.jpg');
-    background-size: contain;
-}
-
 .bordered-img {
-    border: 5px solid white;
+    border: 3px solid white;
     border-radius: 10px;
     margin-right: 15px;
 }
@@ -117,24 +107,24 @@ canvas {
     margin: auto;
 }
 
-.email-container {
+.contact-container {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
 }
 
-.email-container span {
+.contact-container span {
     margin-right: 10px;
     font-weight: bold;
 }
 
-.email-container a {
-    color: blue;
+.contact-container a {
+    color: rgb(82, 137, 193);
     text-decoration: none;
 }
 
-.email-container a:hover {
+.contact-container a:hover {
     text-decoration: underline;
 }
 
@@ -153,7 +143,7 @@ canvas {
 }
 
 .text-container a {
-    color: rgb(81, 166, 81);
+    color: rgb(82, 137, 193);
     text-decoration: none;
 }
 
@@ -163,7 +153,7 @@ canvas {
 }
 
 .game-name {
-    color: rgb(81, 166, 81);
+    color: rgb(82, 137, 193);
 }
 
 @media (max-width: 768px) {
@@ -254,4 +244,13 @@ canvas {
         padding: 5px;
         margin-top: 50px;
     }
+}
+
+.skill-container p {
+
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid rgb(82, 137, 193);
+
 }
