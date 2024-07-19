@@ -1,11 +1,19 @@
+html,
 body {
     padding-top: 5%;
     text-align: center;
     background-color: rgb(27, 31, 31);
     margin: 0;
     font-family: 'Candara', Arial, sans-serif;
-    color: wheat;
-    /*  sans-serif; */
+    color: white;
+    width: 95%;
+    height: 100%;
+}
+
+.logo {
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
 }
 
 nav {
@@ -32,7 +40,7 @@ nav .nav-right a {
     color: white;
     text-decoration: none;
     font-size: 1.2em;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 nav .nav-right a:hover {
@@ -47,9 +55,15 @@ h1 {
     flex-wrap: wrap;
 }
 
+h2.section-title {
+    font-size: 2em;
+    margin: 20px 0;
+    color: rgb(81, 166, 81);
+    /* Change to desired color */
+}
+
 .responsive-img {
-    width: 100%;
-    max-width: 300px;
+    width: 30%;
     height: auto;
 }
 
@@ -87,11 +101,8 @@ canvas {
 
 .bordered-img {
     border: 5px solid white;
-    /* Change this to your desired border color */
     border-radius: 10px;
-    /* Optional: adds rounded corners */
     margin-right: 15px;
-    /* Optional: adds spacing between the image and text */
 }
 
 .responsive-video {
@@ -139,26 +150,20 @@ canvas {
     margin-left: 20px;
     font-size: 16px;
     color: rgb(220, 215, 215);
-    /* Set text color to white */
 }
 
 .text-container a {
     color: rgb(81, 166, 81);
-    /* Change this to your desired link color */
     text-decoration: none;
-    /* Optional: remove underline */
 }
 
 .text-container a:hover {
     color: rgb(120, 196, 120);
-    /* Change this to your desired hover link color */
     text-decoration: underline;
-    /* Optional: underline on hover */
 }
 
 .game-name {
     color: rgb(81, 166, 81);
-    /* Change this to your desired color */
 }
 
 @media (max-width: 768px) {
@@ -167,6 +172,14 @@ canvas {
     nav .nav-right a {
         font-size: 1em;
         margin-right: 5px;
+    }
+
+    nav .nav-right a {
+        margin-right: 0;
+    }
+
+    nav {
+        padding: 10px;
     }
 
     .section {
@@ -182,14 +195,15 @@ canvas {
     }
 
     .responsive-img {
-        max-width: 100%;
+        max-width: 70%;
     }
 
     .canvas-container,
     .video-container,
     .gif-container {
-        width: 100%;
-        max-width: 100%;
+        width: 95%;
+        max-width: 95%;
+        flex-direction: column;
     }
 
     .video-container {
@@ -204,6 +218,16 @@ canvas {
 }
 
 @media (max-width: 400px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav .nav-left,
+    nav .nav-right {
+        justify-content: center;
+        margin: 5px 0;
+    }
 
     nav .nav-left a,
     nav .nav-right a {
@@ -223,6 +247,7 @@ canvas {
     .gif-container {
         width: 100%;
         max-width: 100%;
+        flex-direction: column;
     }
 
     .section {
