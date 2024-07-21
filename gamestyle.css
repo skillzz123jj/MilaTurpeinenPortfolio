@@ -1,13 +1,23 @@
-html,
 body {
     padding-top: 5%;
-    text-align: center;
     background-color: rgb(27, 27, 27);
     margin: 0;
     font-family: 'Candara', Arial, sans-serif;
     color: white;
-    width: 95%;
+    text-align: center;
+    /* Center text content */
     height: 100%;
+    width: 100%;
+    /* Ensure full width */
+}
+
+.container {
+    max-width: 1200px;
+    /* Maximum width of the container */
+    margin: 0 auto;
+    /* Center horizontally */
+    padding: 20px;
+    /* Padding around the content */
 }
 
 .logo {
@@ -54,9 +64,92 @@ nav .nav-right a:hover {
     margin-top: 60px;
 }
 
-.video-container {
+.back-button {
+    display: block;
+    /* Ensure it takes the full width */
+    color: rgb(82, 137, 193);
+    font-size: 1.1em;
+    padding-bottom: 5%;
+    text-align: left;
+    /* Center the back button text */
+}
 
+.gif-container {
+    display: flex;
+    justify-content: center;
+    /* Center images horizontally */
     align-items: center;
-    text-align: middle;
-    margin: 20px 0;
+    /* Center images vertically */
+    gap: 10px;
+    height: 70%;
+    padding-bottom: 5%;
+    /* Define a height for the container */
+}
+
+.image {
+    height: 70%;
+    /* Height of images */
+    width: auto;
+    /* Maintains the aspect ratio */
+}
+
+@media (max-width: 600px) {
+    .gif-container {
+        flex-direction: column;
+        /* Stack images vertically on smaller screens */
+        height: auto;
+        /* Remove fixed height */
+    }
+
+    .image {
+        height: 200px;
+        /* Fixed height for images on mobile */
+    }
+}
+
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    /* Space out the items */
+
+    margin-bottom: 20px;
+}
+
+.info-canvas {
+    flex: 1;
+    /* Allow each canvas to grow equally */
+    background-color: #060505;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid layout for labels and values */
+.info-items {
+    display: grid;
+    grid-template-columns: 150px 0.7fr;
+    /* Adjusted column widths */
+    /* First column: fixed width for labels, second column: flexible for values */
+    gap: 5px;
+    /* Reduced gap between columns */
+    align-items: start;
+    /* Align items at the start of the grid area */
+}
+
+/* Optional styling for labels */
+.info-items label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    /* Space between label and value */
+}
+
+
+@media (max-width: 768px) {
+    .info-container {
+        flex-direction: column;
+        /* Stack canvases vertically on smaller screens */
+        gap: 10px;
+    }
 }
