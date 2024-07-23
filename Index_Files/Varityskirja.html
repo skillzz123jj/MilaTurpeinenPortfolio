@@ -4,12 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Read More Box</title>
+    <style>
+        details {
+            border: 1px solid #aaa;
+            border-radius: 4px;
+            padding: 10px;
+            width: 300px;
+            margin: 10px 0;
+        }
+
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .content {
+            margin-top: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>This is a second page</h1>
-    <a href="index.html" class="back-button">Back to Portfolio</a>
+    <details>
+        <summary>Read More</summary>
+        <div class="content">
+            <p>This is the content that is revealed when the user clicks "Read More".</p>
+            <p>You can put any HTML content here, including images, links, and more.</p>
+        </div>
+    </details>
 </body>
 
 </html>
