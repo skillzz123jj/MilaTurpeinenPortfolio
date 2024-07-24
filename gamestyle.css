@@ -1,6 +1,6 @@
 body {
     padding-top: 10%;
-    text-align: center;
+
     background-color: rgb(27, 27, 27);
     margin: 0;
     font-family: 'Candara', Arial, sans-serif;
@@ -12,13 +12,10 @@ body {
 }
 
 
-title .container {
+.container {
     max-width: 1200px;
-    /* Maximum width of the container */
     margin: 0 auto;
-    /* Center horizontally */
     padding: 20px;
-    /* Padding around the content */
 }
 
 ul {
@@ -27,12 +24,9 @@ ul {
     padding: 0;
     background-color: #333;
     position: fixed;
-    /* Fixes the navbar to the top of the viewport */
     top: 0;
     width: 100%;
-    /* Make sure it spans the full width of the viewport */
     z-index: 1000;
-    /* Ensure it appears above other content */
 }
 
 li {
@@ -47,7 +41,6 @@ li a {
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: #111;
 }
@@ -81,7 +74,7 @@ li a:hover {
 
 .section {
     padding: 20px;
-    text-align: center;
+
     margin-top: 60px;
     font-size: 1em;
 
@@ -102,15 +95,12 @@ li a:hover {
     padding-bottom: 5%;
     text-align: left;
     display: flex;
-    /* or inline-block */
     text-decoration: none;
-    /* Remove underline */
 }
 
 .back-button:hover {
     color: rgb(167, 189, 210);
     text-decoration: underline;
-    /* Add underline on hover */
 }
 
 .arrow {
@@ -131,7 +121,6 @@ li a:hover {
     width: 100%;
 
 }
-
 
 .image-box {
     position: relative;
@@ -154,8 +143,6 @@ li a:hover {
     text-align: left;
     padding: 5px 0;
     font-size: 1.1em;
-
-    /* This will affect the background only */
 }
 
 .overlay p {
@@ -163,22 +150,17 @@ li a:hover {
     font-size: 40px;
     font-weight: bold;
     margin: 0;
-
-
 }
 
 
 @media (max-width: 600px) {
     .gif-container {
         flex-direction: column;
-        /* Stack images vertically on smaller screens */
         height: auto;
-        /* Remove fixed height */
     }
 
     .image {
         height: 200px;
-        /* Fixed height for images on mobile */
     }
 
     .overlay p {
@@ -195,45 +177,34 @@ li a:hover {
 .info-container {
     display: flex;
     justify-content: space-between;
-    /* Space out the items */
     margin-bottom: 20px;
     gap: 10%;
+    text-align: left;
 }
 
 .info-canvas {
     flex: 1;
-    /* Allow each canvas to grow equally */
-    background-color: rgb(82, 137, 193);
+    background-color: #333;
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Grid layout for labels and values */
 .info-items {
     display: grid;
     grid-template-columns: 150px 0.7fr;
-    /* Adjusted column widths */
-    /* First column: fixed width for labels, second column: flexible for values */
     gap: 5px;
-    /* Reduced gap between columns */
     align-items: start;
-    /* Align items at the start of the grid area */
 }
 
-/* Optional styling for labels */
 .info-items label {
     font-weight: bold;
     margin-bottom: 5px;
-    /* Space between label and value */
 }
 
 
 @media (max-width: 768px) {
     .info-container {
         flex-direction: column;
-        /* Stack canvases vertically on smaller screens */
         gap: 10px;
     }
 }

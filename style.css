@@ -6,7 +6,7 @@ body {
     margin: 0;
     font-family: 'Candara', Arial, sans-serif;
     color: white;
-    width: 100%;
+    width: 95%;
     height: 100%;
     font-size: 1.05em;
 
@@ -63,6 +63,20 @@ li a:hover {
     margin: 0;
     color: rgb(82, 137, 193);
 
+}
+
+.right-aligned {
+    float: right;
+    /* Align the items to the right */
+    display: flex;
+    /* Use flexbox to align items horizontally */
+    align-items: center;
+    /* Center items vertically */
+}
+
+.resume-link {
+    margin-left: 10px;
+    /* Add space between the GitHub icon and the Resume link */
 }
 
 .nav-text .title {
