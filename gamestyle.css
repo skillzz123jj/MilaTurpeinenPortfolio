@@ -1,6 +1,5 @@
 body {
-    padding-top: 10%;
-
+    padding-top: 80px;
     background-color: rgb(27, 27, 27);
     margin: 0;
     font-family: 'Candara', Arial, sans-serif;
@@ -8,14 +7,15 @@ body {
     width: 100%;
     height: 100%;
     font-size: 1.05em;
-
 }
-
 
 .container {
     max-width: 1200px;
-    margin: 0 auto;
     padding: 20px;
+    margin: 0 auto;
+    /* Center the container */
+    text-align: left;
+    /* Align text to the left inside the container */
 }
 
 ul {
@@ -24,12 +24,9 @@ ul {
     padding: 0;
     background-color: #333;
     position: fixed;
-    /* Fixes the navbar to the top of the viewport */
     top: 0;
     width: 100%;
-    /* Make sure it spans the full width of the viewport */
     z-index: 1000;
-    /* Ensure it appears above other content */
 }
 
 li {
@@ -44,7 +41,6 @@ li a {
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: #111;
 }
@@ -68,21 +64,16 @@ li a:hover {
     font-weight: bold;
     margin: 0;
     color: rgb(82, 137, 193);
-
 }
 
 .right-aligned {
     float: right;
-    /* Align the items to the right */
     display: flex;
-    /* Use flexbox to align items horizontally */
     align-items: center;
-    /* Center items vertically */
 }
 
 .resume-link {
     margin-left: 10px;
-    /* Add space between the GitHub icon and the Resume link */
 }
 
 .nav-text .title {
@@ -92,10 +83,9 @@ li a:hover {
 
 .section {
     padding: 20px;
-
     margin-top: 60px;
     font-size: 1em;
-
+    padding-bottom: 20px;
 }
 
 .section a {
@@ -104,7 +94,6 @@ li a:hover {
 
 .section a:hover {
     color: rgb(167, 189, 210);
-
 }
 
 .back-button {
@@ -133,11 +122,9 @@ li a:hover {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    height: 70%;
-    padding-bottom: 5%;
     height: auto;
+    padding-bottom: 5%;
     width: 100%;
-
 }
 
 .image-box {
@@ -170,7 +157,6 @@ li a:hover {
     margin: 0;
 }
 
-
 @media (max-width: 600px) {
     .gif-container {
         flex-direction: column;
@@ -185,12 +171,10 @@ li a:hover {
         font-size: 20px;
     }
 
-
     body {
         padding-top: 20%;
     }
 }
-
 
 .info-container {
     display: flex;
@@ -218,7 +202,6 @@ li a:hover {
     font-weight: bold;
     margin-bottom: 5px;
 }
-
 
 @media (max-width: 768px) {
     .info-container {

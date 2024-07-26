@@ -1,7 +1,6 @@
-html,
 body {
-
-    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 20px;
     background-color: rgb(27, 27, 27);
     margin: 0;
     font-family: 'Candara', Arial, sans-serif;
@@ -9,6 +8,7 @@ body {
     width: 100%;
     height: 100%;
     font-size: 1.05em;
+
 
 }
 
@@ -18,12 +18,9 @@ ul {
     padding: 0;
     background-color: #333;
     position: fixed;
-    /* Fixes the navbar to the top of the viewport */
     top: 0;
     width: 100%;
-    /* Make sure it spans the full width of the viewport */
     z-index: 1000;
-    /* Ensure it appears above other content */
 }
 
 li {
@@ -38,7 +35,7 @@ li a {
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
+
 li a:hover {
     background-color: #111;
 }
@@ -55,6 +52,7 @@ li a:hover {
     justify-content: center;
     padding: 14px 16px;
     color: white;
+
 }
 
 .nav-text .name {
@@ -67,16 +65,12 @@ li a:hover {
 
 .right-aligned {
     float: right;
-    /* Align the items to the right */
     display: flex;
-    /* Use flexbox to align items horizontally */
     align-items: center;
-    /* Center items vertically */
 }
 
 .resume-link {
     margin-left: 10px;
-    /* Add space between the GitHub icon and the Resume link */
 }
 
 .nav-text .title {
@@ -99,7 +93,7 @@ h2.section-title {
 }
 
 .responsive-img {
-    width: 30%;
+    width: 25%;
     height: auto;
 }
 
@@ -108,11 +102,15 @@ h2.section-title {
     margin-left: 15px;
 }
 
+.intro-text {
+    text-align: left;
+}
+
 .section {
-    padding: 20px;
+
     text-align: center;
     margin-top: 60px;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -133,18 +131,12 @@ h2.section-title {
     margin-right: 15px;
 }
 
-.responsive-video {
-    width: 100%;
-    height: auto;
-}
-
-
-
 .contact-container {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
+    padding-bottom: 0px;
 }
 
 .contact-container span {
@@ -199,28 +191,20 @@ h2.section-title {
 
 }
 
+.image-box {
+    position: relative;
+    display: inline-block;
+    height: auto;
+    width: 100%;
+}
 
-@media (max-width: 768px) {
+.image {
+    height: auto;
+    width: 100%;
+}
 
-    nav .nav-left a,
-    nav .nav-right a {
-        font-size: 1em;
-        margin-right: 5px;
-    }
+@media (max-width: 600px) {
 
-    nav .nav-right a {
-        margin-right: 0;
-    }
-
-    nav {
-        padding: 10px;
-    }
-
-    .section {
-        padding: 10px;
-        max-width: 900px;
-
-    }
 
     h1 {
         flex-direction: column;
@@ -231,7 +215,7 @@ h2.section-title {
     }
 
     .responsive-img {
-        max-width: 70%;
+        max-width: 200px;
     }
 
     .canvas-container,
@@ -256,40 +240,19 @@ h2.section-title {
 
 @media (max-width: 400px) {
 
-    nav {
-        flex-direction: column;
-    }
-
-    nav .nav-left,
-    nav .nav-right {
-        justify-content: center;
-        margin: 5px 0;
-    }
-
-    nav .nav-left a,
-    nav .nav-right a {
-        font-size: 0.8em;
-    }
 
     h1 {
         flex-direction: column;
     }
 
-    .responsive-img {
-        max-width: 80%;
-    }
-
-    .canvas-container,
-    .video-container,
-    .gif-container {
-        width: 100%;
-        max-width: 100%;
-        flex-direction: column;
-    }
 
     .section {
         padding: 5px;
         margin-top: 50px;
+    }
+
+    body {
+        padding-top: 20%;
     }
 }
 
