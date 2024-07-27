@@ -4,12 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../gamestyle.css">
+    <title>Portfolio</title>
 </head>
 
 <body>
-    <h1>This is a second page</h1>
-    <a href="index.html" class="back-button">Back to Portfolio</a>
+    <div class="container">
+        <a href="../index.html" class="back-button">
+            <img src="../Images/LeftArrow.png" alt="Back" class="arrow"> Back to Portfolio
+        </a>
+    </div>
+    <ul>
+        <li>
+            <div class="nav-text">
+                <div class="name">Mila Turpeinen</div>
+                <div class="title">Programmer</div>
+            </div>
+        <li class="right-aligned">
+            <a href="../Resume.pdf" target="_blank" class="resume-link">Resume</a>
+            <a href="https://github.com/skillzz123jj" target="_blank">
+                <img src="../Images/github-mark-white.png" class="logo" alt="GitHub Logo">
+            </a>
+        </li>
+    </ul>
+
+    <div class="container">
+
+
+        <div class="gif-container">
+            <div class="image-box">
+                <img class="image" alt="Gameplay for Ruoka-aika" src="../Images/Coin-Hunt_GIF.gif">
+                <div class="overlay">
+                    <p>Coin Hunt (Python)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-container">
+            <div class="info-canvas">
+                <h2>About</h2>
+                <p><strong>"Coin Hunt"</strong> is a 2D game made with Python. This project was created
+                    as the final assignment of the advanced Python
+                    programming course at the Department of Computer Science at the University of Helsinki.</p>
+                <p>In the game, the player picks up as many coins as possible while dodging monsters. Survival time is
+                    tracked, and the player needs to stay alive as long as possible. They can buy temporary upgrades to
+                    aid them with the coins they have collected.
+                </p>
+            </div>
+            <div class="info-canvas">
+                <h2>Project Info</h2>
+                <div class="info-items">
+                    <label for="type">Type:</label>
+                    <span>Course assignment</span>
+
+                    <label for="time">Time:</label>
+                    <span>1 week</span>
+
+                    <label for="team-size">Team size:</label>
+                    <span>1</span>
+
+                    <label for="roles">Role(s):</label>
+                    <span>Lead Programmer</span>
+
+                    <label for="roles">Release:</label>
+                    <span>Course website</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+
+            <h2>Introduction</h2>
+            <p>This game was made as a final assignment of the course at the Department of Computer Science at the
+                University of Helsinki.</p> There is an introductory course as well as an advanced Python programming
+            course. These <a href="https://programming-24.mooc.fi/" target="_blank">courses</a> are open to
+            everyone
+            and provide a good
+            foundation in programming. Attendees receive a
+            <strong>certificate</strong> upon completion.
+
+            <h2>Technical Details</h2>
+            <p>The game was developed in Visual Studio Code using Python with the Pygame extension. All course students
+                were provided with the same four images, and we came up with the game ideas ourselves.</p>
+
+            <h2>Outcome and Impact</h2>
+            <p>The games were distributed to other students for peer reviews, and I received positive feedback. One
+                review mentioned that the game was <strong>'creative'</strong> and had <strong>'a good tempo'</strong>.
+                Another comment
+                noted that the
+                code was <strong>well-organized</strong>. The overall score was 4.67/5.
+            </p>
+
+            <h2>What I Learned</h2>
+            <p>I learned a lot about good programming practices and approaches in this course. The course covered basic
+                data types, methods, loops, files, recursion, object-oriented programming, and much more.</p>
+
+        </div>
+    </div>
 </body>
 
 </html>

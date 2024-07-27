@@ -4,35 +4,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Read More Box</title>
-    <style>
-        details {
-            border: 1px solid #aaa;
-            border-radius: 4px;
-            padding: 10px;
-            width: 300px;
-            margin: 10px 0;
-        }
-
-        summary {
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        .content {
-            margin-top: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="../gamestyle.css">
+    <title>Portfolio</title>
 </head>
 
 <body>
-    <details>
-        <summary>Read More</summary>
-        <div class="content">
-            <p>This is the content that is revealed when the user clicks "Read More".</p>
-            <p>You can put any HTML content here, including images, links, and more.</p>
+    <div class="container">
+        <a href="../index.html" class="back-button">
+            <img src="../Images/LeftArrow.png" alt="Back" class="arrow"> Back to Portfolio
+        </a>
+    </div>
+    <ul>
+        <li>
+            <div class="nav-text">
+                <div class="name">Mila Turpeinen</div>
+                <div class="title">Programmer</div>
+            </div>
+        <li class="right-aligned">
+            <a href="../Resume.pdf" target="_blank" class="resume-link">Resume</a>
+            <a href="https://github.com/skillzz123jj" target="_blank">
+                <img src="../Images/github-mark-white.png" class="logo" alt="GitHub Logo">
+            </a>
+        </li>
+    </ul>
+
+    <div class="container">
+
+
+        <div class="gif-container">
+            <div class="image-box">
+                <img class="image" alt="Gameplay for Ruoka-aika" src="../Images/Värityskirja_GIF.gif">
+                <div class="overlay">
+                    <p>Värityskirja (C#, Unity)</p>
+                </div>
+            </div>
         </div>
-    </details>
+
+        <div class="info-container">
+            <div class="info-canvas">
+                <h2>About</h2>
+                <p><strong>"Värityskirja"</strong> (translated as <strong>"Coloring book"</strong>) is a 2D game
+                    developed
+                    using Unity. This project was created
+                    as part of an internship at the Finnish Association on Intellectual and Developmental Disabilities
+                    (FAIDD).</p>
+                <p>In the game, players choose a picture from a collection of simpler and more detailed images to color
+                    in. Users can then download their image once it's finished.
+                </p>
+            </div>
+            <div class="info-canvas">
+                <h2>Project Info</h2>
+                <div class="info-items">
+                    <label for="type">Type:</label>
+                    <span>Internship project</span>
+
+                    <label for="time">Time:</label>
+                    <span>5 Months</span>
+
+                    <label for="team-size">Team size:</label>
+                    <span>5</span>
+
+                    <label for="roles">Role(s):</label>
+                    <span>Lead Programmer</span>
+
+                    <label for="release">Release:</label>
+                    <span>Papunet's website</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+
+            <h2>Introduction</h2>
+            <p>This coloring game was made as an internship project with <strong>Finnish Association on Intellectual and
+                    Developmental Disabilities
+                    (FAIDD)</strong> as apart of my studies at Taitotalo. I helped one of the teams get their project
+                started and
+                eventually became the lead programmer.
+            </p>
+
+            <p>Our teams were one the first ones to be apart of FAIDD's mission to remake their old games so this game
+                will be used as a <strong>model</strong> for future games for their revamped website <a
+                    href="https://papunet.net/what-is-papunet/" target="_blank">Papunet</a>.</p>
+            <h2>Technical Details</h2>
+            <p>I was responsible for the gameplay and menu programming using C# and Unity. I also did version control
+                for our team in git and shared and updated builds of the game to the customer using netlify.
+            <p>Since the game was <strong>published</strong> on a website it was important that the game was optimized
+                for mobile and
+                desktop performance and scaling wise.</p>
+
+
+            <h2>Collaboration and Accessibility</h2>
+            <p>Games being <strong>accsessible</strong> for everyone is important and this collaboration with Papunet
+                allowed me to learn
+                a lot about it.</p>
+            <p>We were in close contanct with Papunets accessibility experts to make sure all aspects of the game were
+                up to the player's needs.</p>
+            <p>Since the game is all about accessibility and learning I implemented the ability play with either mouse,
+                keyboard or mobile.</p>
+
+            <h2>Challenges and Solutions</h2>
+            <p>The most challenging aspect of this game was implementing the option to download the images once they
+                were ready. This required a lot of research and testing, and ultimately, I used a JavaScript function to
+                initiate the download in this <a
+                    href="https://github.com/skillzz123jj/Varitystehtava/blob/main/V%C3%A4ritysteht%C3%A4v%C3%A4/Assets/Mila/SaveImage.cs"
+                    target="_blank">script</a>.</p>
+            </p>
+
+
+
+            <h2>Outcome and Impact</h2>
+            <p>The game was <strong>well-received</strong> by FAIDD and contributed to the their mission of updating the
+                websites games.
+            </p>
+
+            <p></p>
+            <p>Used as a model for updating other games in the FAIDD's collection.</p>
+
+            <h2>What I Learned</h2>
+            <p>This project was one of my <strong>first significant</strong> ventures into game development, and it
+                provided me with
+                invaluable learning experiences. I gained foundational skills in programming, game design, graphical
+                systems, and Unity, as well as experience with version control and collaboration.</p>
+
+            <p>One of the most important lessons I learned was the significance of accessibility in games and media.
+                Working closely with knowledgeable professionals and receiving active feedback helped me understand the
+                critical role accessibility plays in creating inclusive and engaging experiences.</p>
+
+            <p>Overall, this project was a pivotal moment in my career, broadening my understanding of game development
+                and underscoring the importance of continuous learning and adaptation.</p>
+
+
+            <h2>Additional Information</h2>
+            <p>I gave an <strong>interview</strong> along with another team member about our work on this project on
+                Papunets
+                website to advertise these revamped games. The interview
+                discusses the collaboration with students from different schools to create more games in the future and
+                our experiences working with them. In the interview, I talked about the collaborative process with
+                FAIDD, the importance of accessibility, and what I learned about accommodating special needs in game
+                development. Full finnish article can be found <a
+                    href="https://ketju-lehti.fi/aiheet/opiskelu/papunetin-harjoitteluissa-syntyi-uusia-peleja-ja-saavutettavan-pelikehityksen-osaajia/"
+                    target="_blank">here</a>.</p>
+
+        </div>
+    </div>
 </body>
 
 </html>
