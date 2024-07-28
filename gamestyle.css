@@ -13,9 +13,7 @@ body {
     max-width: 1200px;
     padding: 20px;
     margin: 0 auto;
-    /* Center the container */
     text-align: left;
-    /* Align text to the left inside the container */
 }
 
 ul {

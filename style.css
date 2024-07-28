@@ -5,11 +5,9 @@ body {
     margin: 0;
     font-family: 'Candara', Arial, sans-serif;
     color: white;
-    width: 95%;
+    width: 100%;
     height: 100%;
     font-size: 1.05em;
-
-
 }
 
 ul {
@@ -114,6 +112,13 @@ h2.section-title {
     margin: 0 auto;
 }
 
+.container {
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: left;
+}
+
 .canvas-container {
     position: relative;
     width: 100%;
@@ -216,6 +221,7 @@ h2.section-title {
 
     .responsive-img {
         max-width: 200px;
+        width: 200px;
     }
 
     .canvas-container,
@@ -252,7 +258,7 @@ h2.section-title {
     }
 
     body {
-        padding-top: 20%;
+        padding-top: 10%;
     }
 }
 
